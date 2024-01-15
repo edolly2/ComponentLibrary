@@ -1,0 +1,62 @@
+.carousel {
+  width: 60%;
+  height: 70vh;
+  background-color: blue;
+}
+
+.carouselInner {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.carouselInner .left,
+.carouselInner .right {
+  flex: 5%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.carouselInner .center {
+  flex: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem 0;
+}
+
+.carouselInner .center h2,
+.carouselInner .center p {
+  color: white;
+  text-align: center;
+}
+
+
+/* .carouselInner .right {
+  flex: 5%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.arrowIcon {
+  color: white;
+  font-size: 2rem;
+}
